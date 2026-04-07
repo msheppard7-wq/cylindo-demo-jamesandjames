@@ -1,0 +1,301 @@
+{
+  "brand": {
+    "name": "James & James",
+    "logoText": "James & James",
+    "tagline": "Handcrafted Furniture",
+    "website": "https://jamesandjamesfurniture.com",
+    "announcementText": "Cylindo 3D Product Visualization Demo — James & James",
+    "navLinks": ["Dining", "Living", "Bedroom", "Office", "Outdoor"],
+    "navHighlight": "Dining",
+    "footerCopyright": "James & James — Cylindo Demo",
+    "footerColumns": [
+      { "title": "Shop", "links": ["Dining", "Living", "Bedroom", "Office", "All Furniture"] },
+      { "title": "About", "links": ["Our Story", "Showroom", "Reviews", "Blog"] },
+      { "title": "Support", "links": ["Contact Us", "Shipping", "Returns", "Care Guide"] }
+    ],
+    "theme": {
+      "fontHeading": "'Roboto', sans-serif",
+      "fontBody": "'Roboto', sans-serif",
+      "colorBg": "#ffffff",
+      "colorBgAlt": "#FAFAF8",
+      "colorText": "#1a1a1a",
+      "colorTextSecondary": "#666666",
+      "colorAccent": "#1a1a1a",
+      "colorAccentHover": "#333333",
+      "colorBorder": "#e5e5e5",
+      "colorSuccess": "#2D6A4F"
+    }
+  },
+  "cylindo": {
+    "customerId": "4404",
+    "remoteConfig": "pw70b37m"
+  },
+  "products": [
+    {
+      "id": "everly-side-dining-chair",
+      "name": "Everly Side Dining Chair",
+      "code": "EVERLY SIDE DINING CHAIR",
+      "price": "From $570.00",
+      "priceNote": "Fabric from $620 | Leather from $720",
+      "rating": 4.9,
+      "reviewCount": 0,
+      "description": "A beautifully crafted dining chair combining modern elegance with everyday comfort. Available in a curated selection of upholstery and finish options, each piece is made to order.",
+      "badges": [
+        { "text": "Best Seller", "type": "bestseller" },
+        { "text": "Made to Order", "type": "custom" }
+      ],
+      "breadcrumb": ["Home", "Dining", "Seating"],
+      "features": [
+        {
+          "code": "UPHOLSTERY COLOR",
+          "label": "Upholstery",
+          "options": [
+            { "name": "Bisque Boucle", "value": "BISQUE BOUCLE" },
+            { "name": "Mink Mohair", "value": "MINK MOHAIR" },
+            { "name": "Cream Leather", "value": "CREAM LEATHER" }
+          ]
+        },
+        {
+          "code": "FINISH COLOR",
+          "label": "Finish",
+          "options": [
+            { "name": "Almond", "value": "ALMOND" },
+            { "name": "Oat", "value": "OAT" },
+            { "name": "Sable", "value": "SABLE" }
+          ]
+        }
+      ],
+      "highlights": [
+        { "title": "Handcrafted", "description": "Each chair is made to order by skilled craftspeople." },
+        { "title": "Premium Materials", "description": "Choose from boucle, mohair, velvet, and leather upholstery options." },
+        { "title": "Multiple Finishes", "description": "Available in Almond, Oat, and Sable wood finishes." },
+        { "title": "Comfortable Design", "description": "Ergonomic proportions for long, comfortable dining." },
+        { "title": "Interactive 3D", "description": "Explore every angle with Cylindo's 360° viewer." }
+      ],
+      "specs": [
+        {
+          "group": "Product Details",
+          "items": [
+            ["Type", "Side Dining Chair"],
+            ["Frame", "Solid hardwood"],
+            ["Upholstery Options", "3 (Boucle, Mohair, Leather)"],
+            ["Finish Options", "3 (Almond, Oat, Sable)"],
+            ["Made to Order", "Yes"]
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "How long does delivery take for made-to-order pieces?", "a": "Made-to-order pieces typically ship in 8-12 weeks." },
+        { "q": "Can I see the fabrics and finishes in person?", "a": "Visit the James & James showroom at 111 S Main St, Springdale, AR 72764, or contact us for swatches." },
+        { "q": "What is the return policy?", "a": "Made-to-order items are final sale. We encourage visiting our showroom or ordering swatches first." }
+      ],
+      "leadTime": "8-12 week lead time"
+    },
+    {
+      "id": "olivia-dining-table-set-everly",
+      "name": "Olivia Dining Table Set with Everly Chair",
+      "code": "OLIVIA DINING TABLE SET WITH EVERLY SIDE DINING CHAIR",
+      "price": "Inquire for Set Pricing",
+      "priceNote": "Table + Chair Set",
+      "rating": 4.9,
+      "reviewCount": 0,
+      "description": "The complete Olivia dining experience — a beautifully proportioned table paired with Everly Side Dining Chairs. Configure the full set in 3D to see exactly how it will look in your space.",
+      "badges": [
+        { "text": "Complete Set", "type": "custom" },
+        { "text": "Made to Order", "type": "new" }
+      ],
+      "breadcrumb": ["Home", "Dining", "Sets"],
+      "features": [
+        {
+          "code": "UPHOLSTERY COLOR",
+          "label": "Upholstery",
+          "options": [
+            { "name": "Bisque Boucle", "value": "BISQUE BOUCLE" },
+            { "name": "Mink Mohair", "value": "MINK MOHAIR" },
+            { "name": "Cream Leather", "value": "CREAM LEATHER" }
+          ]
+        },
+        {
+          "code": "FINISH COLOR",
+          "label": "Finish",
+          "options": [
+            { "name": "Almond", "value": "ALMOND" },
+            { "name": "Oat", "value": "OAT" },
+            { "name": "Sable", "value": "SABLE" }
+          ]
+        }
+      ],
+      "highlights": [
+        { "title": "Complete Set", "description": "Table and chairs designed to work together in perfect harmony." },
+        { "title": "Coordinated Finishes", "description": "Table and chairs share the same finish options for a cohesive look." },
+        { "title": "Configurable", "description": "Mix upholstery and finish to create your ideal dining set." },
+        { "title": "Made to Order", "description": "Each set is handcrafted to your specifications." },
+        { "title": "3D Visualization", "description": "See the complete set from every angle before you order." }
+      ],
+      "specs": [
+        {
+          "group": "Set Details",
+          "items": [
+            ["Includes", "Olivia Dining Table + Everly Side Chairs"],
+            ["Table Finish Options", "3 (Almond, Oat, Sable)"],
+            ["Chair Upholstery", "3 (Boucle, Mohair, Leather)"],
+            ["Chair Finish", "Matches table"],
+            ["Made to Order", "Yes"]
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "How many chairs are included in the set?", "a": "Contact James & James for set configuration options and pricing." },
+        { "q": "Can I mix finishes between table and chairs?", "a": "The 3D viewer shows coordinated finishes. Contact us for custom configurations." }
+      ],
+      "leadTime": "10-14 week lead time for sets"
+    },
+    {
+      "id": "rustic-windsor-dining-chair",
+      "name": "Rustic Windsor Dining Chair",
+      "code": "RUSTIC WINDSOR DINING CHAIR",
+      "price": "Inquire for Pricing",
+      "priceNote": "Contact for availability",
+      "rating": 4.8,
+      "reviewCount": 0,
+      "description": "A timeless Windsor silhouette reimagined with rustic charm. Solid hardwood construction in your choice of three curated finishes.",
+      "badges": [
+        { "text": "Classic Design", "type": "custom" },
+        { "text": "Made to Order", "type": "new" }
+      ],
+      "breadcrumb": ["Home", "Dining", "Seating"],
+      "features": [
+        {
+          "code": "FINISH COLOR",
+          "label": "Finish",
+          "options": [
+            { "name": "Almond", "value": "ALMOND" },
+            { "name": "Oat", "value": "OAT" },
+            { "name": "Sable", "value": "SABLE" }
+          ]
+        }
+      ],
+      "highlights": [
+        { "title": "Windsor Heritage", "description": "Classic spindle-back design with a modern rustic twist." },
+        { "title": "Solid Hardwood", "description": "Built from quality hardwood for lasting durability." },
+        { "title": "Three Finishes", "description": "Choose Almond, Oat, or Sable to match your table." },
+        { "title": "Handcrafted", "description": "Each chair is individually made to order." },
+        { "title": "Interactive 3D", "description": "Explore every angle with Cylindo's viewer." }
+      ],
+      "specs": [
+        {
+          "group": "Product Details",
+          "items": [
+            ["Type", "Windsor Dining Chair"],
+            ["Frame", "Solid hardwood"],
+            ["Finish Options", "3 (Almond, Oat, Sable)"],
+            ["Upholstery", "None (all wood)"],
+            ["Made to Order", "Yes"]
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "Is this chair comfortable without upholstery?", "a": "The Windsor design features a contoured seat and ergonomic back for comfortable dining." },
+        { "q": "Can this pair with the Olivia table?", "a": "Yes! See the Olivia Table Set with Rustic Windsor Chair for the complete look." }
+      ],
+      "leadTime": "8-12 week lead time"
+    },
+    {
+      "id": "olivia-dining-table-set-windsor",
+      "name": "Olivia Table Set with Rustic Windsor Chair",
+      "code": "OLIVIA DINING TABLE SET WITH RUSTIC WINDSOR DINING CHAIR",
+      "price": "Inquire for Set Pricing",
+      "priceNote": "Table + Chair Set",
+      "rating": 4.8,
+      "reviewCount": 0,
+      "description": "The Olivia dining table paired with Rustic Windsor chairs for a warm, inviting farmhouse aesthetic. See the complete set in 3D.",
+      "badges": [
+        { "text": "Complete Set", "type": "custom" },
+        { "text": "Farmhouse Style", "type": "new" }
+      ],
+      "breadcrumb": ["Home", "Dining", "Sets"],
+      "features": [
+        {
+          "code": "FINISH COLOR",
+          "label": "Finish",
+          "options": [
+            { "name": "Almond", "value": "ALMOND" },
+            { "name": "Oat", "value": "OAT" },
+            { "name": "Sable", "value": "SABLE" }
+          ]
+        }
+      ],
+      "highlights": [
+        { "title": "Farmhouse Charm", "description": "Classic Windsor chairs paired with the elegant Olivia table." },
+        { "title": "Coordinated Finish", "description": "Table and chairs in the same finish for a unified look." },
+        { "title": "Solid Construction", "description": "Hardwood throughout for heirloom quality." },
+        { "title": "Made to Order", "description": "Handcrafted to your exact specifications." },
+        { "title": "Full 360° View", "description": "See the complete set from every angle." }
+      ],
+      "specs": [
+        {
+          "group": "Set Details",
+          "items": [
+            ["Includes", "Olivia Dining Table + Rustic Windsor Chairs"],
+            ["Finish Options", "3 (Almond, Oat, Sable)"],
+            ["Material", "Solid hardwood"],
+            ["Made to Order", "Yes"]
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "How many chairs come with the set?", "a": "Contact James & James for set configurations and pricing." }
+      ],
+      "leadTime": "10-14 week lead time for sets"
+    },
+    {
+      "id": "olivia-dining-table",
+      "name": "Olivia Dining Table",
+      "code": "OLIVIA DINING TABLE",
+      "price": "Inquire for Pricing",
+      "priceNote": "Contact for availability",
+      "rating": 4.9,
+      "reviewCount": 0,
+      "description": "The Olivia Dining Table features clean lines and beautiful proportions. Available in three curated finishes, each table is made to order from solid hardwood.",
+      "badges": [
+        { "text": "New", "type": "new" },
+        { "text": "Made to Order", "type": "custom" }
+      ],
+      "breadcrumb": ["Home", "Dining", "Tables"],
+      "features": [
+        {
+          "code": "FINISH COLOR",
+          "label": "Finish",
+          "options": [
+            { "name": "Almond", "value": "ALMOND" },
+            { "name": "Oat", "value": "OAT" },
+            { "name": "Sable", "value": "SABLE" }
+          ]
+        }
+      ],
+      "highlights": [
+        { "title": "Clean Design", "description": "Timeless proportions that work in modern and traditional spaces." },
+        { "title": "Solid Hardwood", "description": "Built to last from quality hardwood construction." },
+        { "title": "Three Finishes", "description": "Choose Almond, Oat, or Sable for your space." },
+        { "title": "Pairs Perfectly", "description": "Designed to coordinate with Everly and Windsor chairs." },
+        { "title": "Interactive 3D", "description": "Rotate and zoom to see every detail." }
+      ],
+      "specs": [
+        {
+          "group": "Product Details",
+          "items": [
+            ["Type", "Dining Table"],
+            ["Frame", "Solid hardwood"],
+            ["Finish Options", "3 (Almond, Oat, Sable)"],
+            ["Made to Order", "Yes"]
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "What size is the Olivia table?", "a": "Contact James & James for dimension details and sizing options." },
+        { "q": "Which chairs pair with this table?", "a": "The Everly Side Chair and Rustic Windsor Chair are designed to coordinate with the Olivia table." }
+      ],
+      "leadTime": "8-12 week lead time"
+    }
+  ]
+}
