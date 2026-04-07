@@ -67,7 +67,21 @@ function updateURL() {
 
 function renderBrand() {
   const { brand } = config;
-  document.getElementById('logo').textContent = brand.logoText;
+  const logo = document.getElementById('logo');
+  if (brand.logoImageUrl) {
+    if (brand.logoImageUrlDark) {
+      logo.innerHTML = `
+        <picture class="logo-picture">
+          <source srcset="${brand.logoImageUrlDark}" media="(prefers-color-scheme: dark)" />
+          <img src="${brand.logoImageUrl}" alt="${brand.name}" class="logo-image" />
+        </picture>
+      `;
+    } else {
+      logo.innerHTML = `<img src="${brand.logoImageUrl}" alt="${brand.name}" class="logo-image" />`;
+    }
+  } else {
+    logo.textContent = brand.logoText;
+  }
 
   // Announcement bar
   const announcement = document.getElementById('announcement-bar');
@@ -139,12 +153,20 @@ function renderProduct() {
       code="${product.code}"
       remote-config="${cylindo.remoteConfig}"
       presentation="gallery"
+      background-color="#ffffff"
       controls="ar fullscreen nav zoom indicators"
       interaction-hiding-delay="Infinity"
       ignore-unknown-features="true"
+      style="background:#ffffff;"
     >
       <img alt="${product.name}" slot="placeholder" src="${getPlaceholderUrl(product.code)}" />
     </cylindo-viewer>
+  `;
+
+  const curatorMeta = document.getElementById('curator-meta');
+  curatorMeta.innerHTML = `
+    <span class="curator-pill">Cylindo Curator</span>
+    <span class="curator-copy">${product.name} · ${product.code}</span>
   `;
 
   // Badges

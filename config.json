@@ -1,7 +1,9 @@
 {
   "brand": {
     "name": "James & James",
-    "logoText": "James & James",
+    "logoText": "JAMES & JAMES",
+    "logoImageUrl": "assets/james-and-james-logo.png",
+    "logoImageUrlDark": "assets/james-and-james-logo-alt.png",
     "tagline": "Handcrafted Furniture",
     "website": "https://jamesandjamesfurniture.com",
     "announcementText": "Cylindo 3D Product Visualization Demo — James & James",
