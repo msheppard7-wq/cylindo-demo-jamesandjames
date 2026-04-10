@@ -108,10 +108,19 @@ function renderProductSwitcher() {
   const sw = document.getElementById('product-switcher');
   if (config.products.length <= 1) { sw.style.display = 'none'; return; }
 
+  const preferredFirstId = 'rustic-windsor-dining-chair';
+  const switcherOrder = config.products
+    .map((product, index) => ({ product, index }))
+    .sort((a, b) => {
+      if (a.product.id === preferredFirstId) return -1;
+      if (b.product.id === preferredFirstId) return 1;
+      return 0;
+    });
+
   sw.innerHTML = `<div class="switcher-inner">
     <span class="switcher-label">Products</span>
-    ${config.products.map((p, i) =>
-      `<button class="switcher-btn${i === currentProductIndex ? ' active' : ''}" data-index="${i}">${p.name}</button>`
+    ${switcherOrder.map(({ product, index }) =>
+      `<button class="switcher-btn${index === currentProductIndex ? ' active' : ''}" data-index="${index}">${product.name}</button>`
     ).join('')}
   </div>`;
 
@@ -279,6 +288,8 @@ function bindInteractions() {
 
   // Tear sheet
   document.getElementById('tearsheet-btn').addEventListener('click', openTearSheet);
+
+  document.getElementById('download-3d-btn').addEventListener('click', openModal3d);
 }
 
 // ---- Tear Sheet ----
@@ -377,6 +388,30 @@ function closeTearSheet() {
   document.body.style.overflow = '';
 }
 
+// ---- Download 3D files modal ----
+
+function openModal3d() {
+  const product = config.products[currentProductIndex];
+  const overlay = document.getElementById('modal-3d-overlay');
+  const label = document.getElementById('modal-3d-product-label');
+  label.textContent = product.name;
+
+  const btn = document.getElementById('download-3d-btn');
+  if (btn) {
+    btn.setAttribute('aria-expanded', 'true');
+  }
+  overlay.classList.add('active');
+}
+
+function closeModal3d() {
+  const overlay = document.getElementById('modal-3d-overlay');
+  overlay.classList.remove('active');
+  const btn = document.getElementById('download-3d-btn');
+  if (btn) {
+    btn.setAttribute('aria-expanded', 'false');
+  }
+}
+
 // ---- Init ----
 
 window.addEventListener('popstate', () => {
@@ -397,5 +432,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (e.target === e.currentTarget) closeTearSheet();
   });
   document.getElementById('tearsheet-print-btn').addEventListener('click', () => window.print());
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeTearSheet(); });
+
+  document.getElementById('modal-3d-close').addEventListener('click', closeModal3d);
+  document.getElementById('modal-3d-overlay').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal3d();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    closeTearSheet();
+    closeModal3d();
+  });
 });

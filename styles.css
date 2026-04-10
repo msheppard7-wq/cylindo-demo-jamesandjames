@@ -258,7 +258,8 @@ button { cursor: pointer; font-family: inherit; }
 
 .cylindo-wrapper {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  /* Match Cylindo viewer default (4:3); a 1:1 box letterboxes curator slides */
+  aspect-ratio: 4 / 3;
   background: #fff;
   border: none;
   border-radius: var(--radius);
@@ -268,23 +269,131 @@ button { cursor: pointer; font-family: inherit; }
 .cylindo-wrapper cylindo-viewer {
   width: 100%;
   height: 100%;
+  --legacy-browser-aspect-ratio: 4 / 3;
+  display: block;
+}
+
+/* Placeholder uses contain by default; cover fills the frame while assets load */
+.cylindo-wrapper cylindo-viewer img[slot="placeholder"] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-media-actions {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .tearsheet-btn {
-  margin-top: 12px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   background: none;
   border: none;
   border-radius: var(--radius);
-  padding: 8px 16px;
+  padding: 8px 0;
   font-size: 12px;
   color: var(--color-text-secondary);
   transition: all 0.2s;
 }
 
 .tearsheet-btn:hover { color: var(--color-text); }
+
+.download-3d-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 0;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  transition: color 0.2s;
+}
+
+.download-3d-btn:hover { color: var(--color-text); }
+
+/* Download 3D modal */
+.modal-3d-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.modal-3d-overlay.active { display: flex; }
+
+.modal-3d {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  padding: 28px 24px 24px;
+  position: relative;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
+}
+
+.modal-3d-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--color-text-secondary);
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.modal-3d-close:hover { color: var(--color-text); }
+
+.modal-3d-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+  padding-right: 32px;
+}
+
+.modal-3d-subtitle {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.modal-3d-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-3d-list li {
+  border-top: 1px solid var(--color-border);
+}
+
+.modal-3d-list li:first-child { border-top: none; }
+
+.modal-3d-item {
+  display: block;
+  padding: 14px 4px;
+  font-size: 14px;
+  color: var(--color-text);
+}
 
 /* ---- Product Info ---- */
 .product-info { padding-top: 8px; }
@@ -885,10 +994,6 @@ button { cursor: pointer; font-family: inherit; }
 
   .product-media {
     position: static;
-  }
-
-  .cylindo-wrapper {
-    aspect-ratio: 4 / 3;
   }
 }
 
